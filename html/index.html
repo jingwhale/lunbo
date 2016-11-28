@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>              
+    <title>${"name":"title", "description":"页面title"}</title>  
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">           
+    <meta http-equiv="content-style-type" content="text/css"/>   
+    <meta http-equiv="content-script-type" content="text/javascript"/>   
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>   
+    <meta name="keywords" content_1='${"name":"keywords", "description":"页面关键字"}'/>
+    <meta name="description" content_1='${"name":"description", "description":"页面描述"}'/>
+    <link type="text/css" rel="stylesheet" href="http://s.stu.126.net/s/core.css">
+</head>
+<body>
+    <!-- $specialContentWrap标签表示只发布标签内的内容 -->
+    <!-- $specialContentWrap -->
+    <link type="text/css" rel="stylesheet" href="http://cst.stu.126.net/u/css/cms/specialWebCommonStyle.0.1.css">
+    <!-- relpace-css:css/index.css -->
+    <style>
+        /* UI */
+        li{
+            width: 216px;
+        }
+
+        /* base */
+        .u-rotation-content{
+            height: inherit;
+            overflow: auto;
+        }
+        .u-rotation-content ul{
+            height: inherit;
+        }
+        .u-rotation-btn{
+            cursor: pointer;
+            width: 60px;
+            height: inherit;
+            opacity: 0.3;
+            /*background: url(http://nos.netease.com/edu-image/42A62068F71425B3F4F2C0A75B047EDE.png) center no-repeat;*/
+            background-size: 36px;
+        }
+        .u-rotation-btn:hover{
+            opacity: 0.5;
+        }
+        .u-rotation-left{
+            transform:rotate(180deg);
+        }
+        .u-rotation-right{
+        }
+        .disabled{
+            cursor: default;
+            opacity: 0.1;
+        }
+        .disabled:hover{
+            opacity: 0.1;
+        }
+
+
+        li{
+            height: 60px;
+            background-color: mediumvioletred;
+            margin-right: 20px;
+            padding: 10px;
+        }
+
+    </style>
+    <div id="j-lunbo">
+
+    </div>
+    <script type="text/javascript" src="http://cst.stu.126.net/u/js/cms/specialWebCommon.0.1.js"></script>
+    <script type="text/javascript" src="../js/rotation.js"></script>
+    <script type="text/javascript">
+        <!-- relpace-js:js/share.js -->
+    </script>
+    <script type="text/javascript">
+        <!-- relpace-js:js/rotation.js -->
+    </script>
+    <script type="text/javascript">
+        <!-- relpace-js:js/index.js -->
+    </script>
+    <script>
+        var _option = {
+            parent : "#j-lunbo",
+            tpl :'<ul class="f-cb"><li class="f-fl">lunbo1</li><li class="f-fl test2">lunbo2</li><li class="f-fl">lunbo3</li><li class="f-fl">lunbo4</li><li class="f-fl">lunbo5</li><li class="f-fl">lunbo6</li><li class="f-fl">lunbo7</li></ul>',
+            rotationCount:3,
+            btnMargin:5,
+            btnBackground:"http://nos.netease.com/edu-image/42A62068F71425B3F4F2C0A75B047EDE.png"
+        };
+        $.createRotation(_option);
+    </script>
+    <!-- /$specialContentWrap -->
+</body>
+</html>
